@@ -1,0 +1,136 @@
+body
+{
+    background-color: rgba(19, 1, 50, 0.92);
+}
+.main-div
+{
+    height: 35vw;
+    width: 25vw;
+    border: 2px rgb(240, 236, 236) solid;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: -10px -10px  50px lightblue,10px 10px  50px lightblue;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.8s;
+}
+.main-div:hover
+{
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+.main-div:hover > .flip-bacground
+{
+    display: block;
+    z-index: 1;
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+.main-div img
+{
+    width: 25vw;
+    height: 10vw;
+    border-radius: 20px 20px 0 0;
+    /* transition: all 0.8s; */
+}
+
+.profile-photo-div
+{
+    height: 12vw;
+    width: 12vw;
+    border-radius: 50%;
+   
+    position: absolute;
+    top: 70px;
+    left:16px;
+    background-color: rgba(37,20,66,1);
+    /* display: inline-block; */
+
+}
+.profile-photo-div img
+{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    padding: 15px;
+}
+.name-div
+{
+
+    float: right;
+}
+.name-div h3
+{
+    color: rgba(255, 255, 255, 0.541);
+    padding-right: 40px;
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.main-div .btn1,.btn2
+{
+   
+    
+    color: #ba87ea;
+    background-color: transparent;
+    border: 2px solid #ba87ea;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.btn1
+{
+    margin: 15px 0 0 80px;
+   
+}
+
+    .btn2
+{
+    margin: 15px 0 0 30px;
+  
+}
+
+.btn1:hover, .btn2:hover
+{
+    background-color: #c3dffa;
+    color: black;
+}
+
+.icons
+{
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.icons i
+{
+    margin: 55px 0 0 44px;
+    transition: all .5s;
+}
+
+.icons i:hover
+{
+   cursor: pointer;
+   transform: scale(2);
+}
+
+.flip-bacground
+{
+    height: 35vw;
+    width: 25vw;
+    position: relative;
+    background-color:rgba(37,20,66,1) ;
+    top: -35vw;
+    border-radius: 20px;
+    z-index: -1;
+    color: white;
+    display: none;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.2s;
+   
+}
+
+.flip-bacground p
+{
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
